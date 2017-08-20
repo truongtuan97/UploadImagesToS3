@@ -3,6 +3,7 @@ lock "3.9.0"
 
 set :application, "UploadImagesToS3"
 set :repo_url, "git@github.com:truongtuan97/UploadImagesToS3.git"
+
 # 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

@@ -3,7 +3,7 @@ require "capistrano/setup"
 
 # Include default deployment tasks
 require "capistrano/deploy"
-
+require 'capistrano/ssh_doctor'
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
@@ -28,7 +28,7 @@ install_plugin Capistrano::SCM::Git
 #
 require "capistrano/rails"
 # require "capistrano/rvm"
-#require "capistrano/rbenv"
+require "capistrano/rbenv"
 # require "capistrano/chruby"
 # require "capistrano/bundler"
 # require "capistrano/rails/assets"

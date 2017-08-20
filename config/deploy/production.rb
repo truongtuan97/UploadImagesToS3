@@ -1,1 +1,1 @@
-server 'ec2-user@ec2-54-173-119-66.compute-1.amazonaws.com', user: 'ec2-user', roles: %w{web app}
+server 'ec2-54-173-119-66.compute-1.amazonaws.com', user: 'ec2-user', roles: %w{web app}
