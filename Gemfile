@@ -34,9 +34,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 group :development do
-  gem 'capistrano-rails'
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
   gem 'capistrano-rbenv'
-  gem 'capistrano-ext', '~> 1.2', '>= 1.2.1'
 end
 
 gem "fog"
