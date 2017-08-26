@@ -4,7 +4,7 @@ lock "3.9.0"
 set :application, "uploadimagestos3"
 set :repo_url, "git@github.com:truongtuan97/UploadImagesToS3.git"
 set :puma_threads,    [4, 16]
-set :user, 'ec2-user'
+set :user, 'ubuntu'
 set :puma_workers,    0
 
 set :branch, :master
