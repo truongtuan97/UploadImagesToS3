@@ -1,14 +1,13 @@
 # config valid only for current version of Capistrano
 lock "3.9.0"
+# Change these
+#server 'your_server_ip', port: your_port_num, roles: [:web, :app, :db], primary: true
 
-set :application, "uploadimagestos3"
-set :repo_url, "git@github.com:truongtuan97/UploadImagesToS3.git"
-
+set :repo_url,        'git@github.com:truongtuan97/UploadImagesToS3.git'
+set :application,     'uploadimagestos3'
+set :user,            'ubuntu'
 set :puma_threads,    [4, 16]
-set :user, 'ubuntu'
 set :puma_workers,    0
-
-set :branch, :master
 
 # Don't change these unless you know what you're doing
 set :pty,             true
